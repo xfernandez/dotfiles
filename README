@@ -1,6 +1,11 @@
 Dotfiles
 --------
 
-Execute this to setting up:
+Execute this to set them up:
 
 $ ruby setup.rb
+
+Include
+-------
+
+- Vim configuration
