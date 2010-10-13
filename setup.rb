@@ -7,5 +7,5 @@ def link(name, dest_name = name)
 end
 
 link('.vim')
-link('.vim/vimrc', '.vimrc')
-link('.vim/gvimrc', '.gvimrc')
+%w{vimrc gvimrc}.each {|path| link(".vim/#{path}", ".#{path}")}
+%w{backup swap}.each {|path| mkdir_p File.join(ENV['HOME'], '.vim', path)}
