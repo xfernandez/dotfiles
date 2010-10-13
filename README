@@ -1,0 +1,6 @@
+Dotfiles
+--------
+
+Execute this to setting up:
+
+$ ruby setup.rb

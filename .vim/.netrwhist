@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/Users/david/dev/trinidad_daemon_extension/trinidad-libs'
+let g:netrw_dirhist_2='/Users/david/dev/trinidad/spec'
+let g:netrw_dirhist_3='/Users/david/dev/ruby-libvirt'
+let g:netrw_dirhist_4='/Users/david/dev/rake'
+let g:netrw_dirhist_5='/Users/david/dev/trinidad/rakelib'
