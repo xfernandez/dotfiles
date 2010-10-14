@@ -16,6 +16,10 @@ set modeline                          " make sure modeline support is enabled
 set autoread                          " reload files (no local changes only)
 set tabpagemax=50                     " open 50 tabs max
 
+" swap similar keys
+nnoremap ' `
+nnoremap ` '
+
 " ---------------------------------------------------------------------------
 "  Highlight
 " ---------------------------------------------------------------------------
@@ -46,18 +50,18 @@ set directory=~/.vim/swap//,.,~/tmp,/tmp " keep swp files under ~/.vim/swap
 "  UI
 " ----------------------------------------------------------------------------
 
-set ruler                  " show the cursor position all the time
-set noshowcmd              " don't display incomplete commands
-set nolazyredraw           " turn off lazy redraw
-set number                 " line numbers
-set wildmenu               " turn on wild menu
+set ruler                              " show the cursor position all the time
+set noshowcmd                          " don't display incomplete commands
+set nolazyredraw                       " turn off lazy redraw
+set number                             " line numbers
+set wildmenu                           " turn on wild menu
 set wildmode=list:longest,full
-set ch=2                   " command line height
-set backspace=2            " allow backspacing over everything in insert mode
-set whichwrap+=<,>,h,l,[,] " backspace and cursor keys wrap to
-set shortmess=filtIoOA     " shorten messages
-set report=0               " tell us about changes
-set nostartofline          " don't jump to the start of line when scrolling
+set ch=2                               " command line height
+set backspace=indent,eol,start         " allow backspacing over everything in insert mode
+set whichwrap+=<,>,h,l,[,]             " backspace and cursor keys wrap to
+set shortmess=filtIoOA                 " shorten messages
+set report=0                           " tell us about changes
+set nostartofline                      " don't jump to the start of line when scrolling
 
 " ----------------------------------------------------------------------------
 " Visual Cues
