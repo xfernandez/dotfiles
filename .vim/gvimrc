@@ -5,7 +5,10 @@
 winpos 0 0
 colorscheme Mustang
 
-set gfn=Monaco:h13
+if system('uname') =~ 'Darwin'
+  set gfn=Monaco:h13
+endif
+
 set anti               " antialiasing
 set guioptions=gemc
 set columns=180
