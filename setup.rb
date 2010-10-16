@@ -3,10 +3,11 @@ include FileUtils
 
 def link(name, dest_name = name)
   dir = File.expand_path(File.dirname(__FILE__))
-  ln_s File.join(dir, name), File.join(ENV['HOME'], dest_name)
+  dest = File.join(ENV['HOME'], dest_name)
+  ln_s(File.join(dir, name), dest) unless File.exist?(dest)
 end
 
-['bashrc.d', '.vim'].each do |path|
+['.dircolors', '.bash_profile', '.bashrc', 'bashrc.d', '.vim'].each do |path|
   link path
 end
 
