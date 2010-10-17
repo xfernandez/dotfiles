@@ -20,6 +20,8 @@ set tabpagemax=50                     " open 50 tabs max
 nnoremap ' `
 nnoremap ` '
 
+au FocusLost * :wa
+
 " ---------------------------------------------------------------------------
 "  Highlight
 " ---------------------------------------------------------------------------
@@ -126,6 +128,9 @@ inoremap <Up> <C-o>gk
 " do not menu with left / right in command line
 cnoremap <Left> <Space><BS><Left>
 cnoremap <Right> <Space><BS><Right>
+nnoremap <leader>w <C-w>v<C-w>l
+
+inoremap jj <ESC>
 
 " ---------------------------------------------------------------------------
 "  Strip all trailing whitespace in file
