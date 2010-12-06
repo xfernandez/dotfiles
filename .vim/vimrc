@@ -102,13 +102,6 @@ map <F7>  :cn<CR>
 map <S-F7> :cp<CR>
 map <A-F7> :copen<CR>
 
-if system('uname') =~ 'Linux'
-  nmap <C-V> "+gP
-  imap <C-V> <ESC><C-V>i
-  vmap <C-C> "+y
-  vmap <C-X> "+x
-endif
-
 " reflow paragraph with Q in normal and visual mode
 nnoremap Q gqap
 vnoremap Q gq
