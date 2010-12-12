@@ -129,6 +129,12 @@ nnoremap <leader>w <C-w>v<C-w>l
 
 inoremap jj <ESC>
 
+" ragtag custom mappings
+imap <leader>= <C-X>=
+imap <leader>- <C-X>-
+imap <leader>+ <C-X>+
+imap <leader>_ <C-X>_
+
 " ---------------------------------------------------------------------------
 "  Strip all trailing whitespace in file
 " ---------------------------------------------------------------------------
