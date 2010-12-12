@@ -1,6 +1,0 @@
-#!/bin/bash
-
-dirname=`dirname $0`
-
-ln -s ${dirname}/vimrc ${dirname}/../.vimrc
-ln -s ${dirname}/gvimrc ${dirname}/../.gvimrc

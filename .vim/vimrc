@@ -5,6 +5,10 @@
 let mapleader = ","
 let g:mapleader = ","
 
+" Load pathogen
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
 set nocompatible                      " essential
 set history=1000                      " lots of command line history
 set cf                                " error files / jumping
@@ -143,3 +147,9 @@ syntax on               " enable syntax
 filetype on             " Automatically detect file types.
 filetype plugin on
 filetype indent on
+
+" Mirah
+au BufRead,BufNewFile *.mirah set filetype=ruby
+
+" RSpec makegreen compiler
+autocmd BufNewFile,BufRead *_spec.rb compiler rspec

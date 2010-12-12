@@ -3,7 +3,7 @@
 " -----------------------------------------------------------
 "
 winpos 0 0
-colorscheme Mustang
+colorscheme mustang
 
 if system('uname') =~ 'Darwin'
   set gfn=Monaco:h13
