@@ -99,8 +99,8 @@ export PAGER MANPAGER
 # PROMPT
 # ----------------------------------------------------------------------
 
-source .bashrc.d/git-completion.bash
-source .bashrc.d/prompt.bash
+source ~/.bashrc.d/git-completion.bash
+source ~/.bashrc.d/prompt.bash
 
 # ----------------------------------------------------------------------
 # MACOS X / DARWIN SPECIFIC
