@@ -11,7 +11,7 @@ puts 'Loading submodules'
 `git submodule update --init`
 
 puts 'Creating symlinks'
-['.dircolors', '.bash_profile', '.bashrc', 'bashrc.d', '.vim'].each do |path|
+['.dircolors', '.bash_profile', '.bashrc', '.bashrc.d', '.vim'].each do |path|
   link path
 end
 
